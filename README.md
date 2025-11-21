@@ -10,34 +10,6 @@ A lightweight C program that converts any image into ASCII art. This tool takes 
 - 💻 Terminal-friendly output
 - 🎯 Uses 66 different ASCII characters for detailed representation
 
-## Prerequisites
-
-To compile and run this program, you'll need:
-
-- A C compiler (GCC, Clang, MSVC, etc.)
-- STB libraries (header files need to be placed in the `stb` directory):
-  - `stb_image.h` - For image loading
-  - `stb_image_write.h` - For image writing capabilities
-  - `stb_image_resize2.h` - For image resizing
-  
-  Download these from [STB Libraries](https://github.com/nothings/stb)
-
-## Installation
-
-### Linux/macOS
-
-```bash
-# Clone the repository
-git clone https://github.com/Nahid-iiqbal/ASCII-Image-Generator.git
-cd ASCII-Image-Generator
-
-# Compile the program
-gcc ASCIIimageGen.c -o ascii-gen -lm
-
-# Run the program
-./ascii-gen <image-path>
-```
-
 ### Windows
 
 ```bash
@@ -93,20 +65,13 @@ This will resize the output to 100 characters wide while maintaining the aspect 
 
 3. **Grayscale Conversion**: Each pixel is converted to grayscale using the average of RGB values: `gray = (R + G + B) / 3`
 
-4. **ASCII Mapping**: The grayscale value (0-255) is mapped to one of 66 ASCII characters, from darkest to brightest:
-   ```
-      `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
-   ```
+4. **ASCII Mapping**: The grayscale value (0-255) is mapped to one of 66 ASCII characters, from darkest to brightest
 
 5. **Output**: The ASCII characters are printed to the terminal, creating the final ASCII art.
 
 ## ASCII Character Set
 
-The program uses 66 characters arranged from darkest (space) to brightest ($):
-
-```
-    `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
-```
+The program uses 66 characters arranged from darkest (space) to brightest
 
 ## Technical Details
 
@@ -118,7 +83,7 @@ The program uses 66 characters arranged from darkest (space) to brightest ($):
 ## Tips for Best Results
 
 - Use images with good contrast for better ASCII art
-- Smaller widths (40-100 characters) work well for detailed images
+- Smaller widths (500-1000 characters) work well for detailed images
 - Landscape images generally produce better results than portraits
 - Try different terminal font sizes for varied effects
 - Use monospace fonts in your terminal for proper alignment
