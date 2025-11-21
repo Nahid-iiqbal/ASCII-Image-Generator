@@ -15,10 +15,12 @@ A lightweight C program that converts any image into ASCII art. This tool takes 
 To compile and run this program, you'll need:
 
 - A C compiler (GCC, Clang, MSVC, etc.)
-- STB libraries (included in the `stb` directory):
+- STB libraries (header files need to be placed in the `stb` directory):
   - `stb_image.h` - For image loading
   - `stb_image_write.h` - For image writing capabilities
   - `stb_image_resize2.h` - For image resizing
+  
+  Download these from [STB Libraries](https://github.com/nothings/stb)
 
 ## Installation
 
@@ -103,7 +105,7 @@ This will resize the output to 100 characters wide while maintaining the aspect 
 The program uses 66 characters arranged from darkest (space) to brightest ($):
 
 ```
-  `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
+   `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
 ```
 
 ## Technical Details
