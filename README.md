@@ -44,7 +44,7 @@ git clone https://github.com/Nahid-iiqbal/ASCII-Image-Generator.git
 cd ASCII-Image-Generator
 
 # Compile the program (using GCC/MinGW)
-gcc ASCIIimageGen.c -o ascii-gen.exe
+gcc ASCIIimageGen.c -o ascii-gen.exe -lm
 
 # Run the program
 ascii-gen.exe <image-path>
@@ -93,7 +93,7 @@ This will resize the output to 100 characters wide while maintaining the aspect 
 
 4. **ASCII Mapping**: The grayscale value (0-255) is mapped to one of 66 ASCII characters, from darkest to brightest:
    ```
-   " `^\",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$"
+    `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
    ```
 
 5. **Output**: The ASCII characters are printed to the terminal, creating the final ASCII art.
