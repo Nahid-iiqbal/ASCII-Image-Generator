@@ -93,7 +93,7 @@ This will resize the output to 100 characters wide while maintaining the aspect 
 
 4. **ASCII Mapping**: The grayscale value (0-255) is mapped to one of 66 ASCII characters, from darkest to brightest:
    ```
-    `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
+     `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
    ```
 
 5. **Output**: The ASCII characters are printed to the terminal, creating the final ASCII art.
@@ -103,7 +103,7 @@ This will resize the output to 100 characters wide while maintaining the aspect 
 The program uses 66 characters arranged from darkest (space) to brightest ($):
 
 ```
- `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
+  `^",:;Il!i~+_-?][}{1)(|\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$
 ```
 
 ## Technical Details
