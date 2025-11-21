@@ -13,49 +13,29 @@ A lightweight C program that converts any image into ASCII art. This tool takes 
 ### Windows
 
 ```bash
-# Clone the repository
-git clone https://github.com/Nahid-iiqbal/ASCII-Image-Generator.git
-cd ASCII-Image-Generator
-
-# Compile the program (using GCC/MinGW)
-gcc ASCIIimageGen.c -o ascii-gen.exe -lm
+#Run Open Terminal.bat
 
 # Run the program
-ascii-gen.exe <image-path>
+./ASCIIGen.exe <image-path>
 ```
-
-## Usage
 
 ### Basic Usage
 
 ```bash
-./ascii-gen image.jpg
+./ASCIIGen <image path>
 ```
 
-This will display the ASCII art version of `image.jpg` in your terminal with the original width.
+This will display the ASCII art version of `image path` in your terminal with the original width.
 
 ### Custom Width
 
 You can specify a custom width for the output:
 
 ```bash
-./ascii-gen image.jpg -w 100
+./ASCIIGen <image path> -w 100
 ```
 
 This will resize the output to 100 characters wide while maintaining the aspect ratio.
-
-### Example
-
-```bash
-# Convert an image with default width
-./ascii-gen photo.png
-
-# Convert an image with custom width of 80 characters
-./ascii-gen landscape.jpg -w 80
-
-# Redirect output to a text file
-./ascii-gen portrait.bmp -w 120 > output.txt
-```
 
 ## How It Works
 
